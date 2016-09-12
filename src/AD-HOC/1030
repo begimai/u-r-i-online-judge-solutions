@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int test = scan.nextInt();
+		long x = 0;
+		for (long i = 1; i <= test; ++i) {
+			long n = scan.nextInt();
+			long m = scan.nextInt();
+			for (long j = 1; j <= n; ++j) {
+				x = m * j;
+				while (x > n) {
+					x = ((m * (x - n) - 1) / (m - 1));
+				}
+			}
+			System.out.printf("Case %d: %d%n", i, x);
+		}
+	}
+}
