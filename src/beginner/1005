@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner scan = new Scanner(System.in);
+		float A;
+		float B;
+		float MEDIA;
+		A = scan.nextFloat();
+		B = scan.nextFloat();
+		
+		MEDIA = (float)(A * 3.5 + B * 7.5)/(float)(3.5 + 7.5);
+		if (A <= 10 && B <= 10)
+		{
+			if (A >= 0 && B >= 0)
+			{
+				System.out.printf("MEDIA = %.5f\n", MEDIA);
+			}
+		}
+	}
+}
