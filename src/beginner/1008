@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner scan = new Scanner(System.in);
+		int NUMBER = scan.nextInt();
+		int hour = scan.nextInt();
+		double amount = scan.nextDouble();
+		double SALARY = hour * amount;
+		System.out.printf("NUMBER = %d\n", NUMBER);
+		System.out.printf("SALARY = U$ %.2f\n", SALARY );
+      
+	}
+} 
