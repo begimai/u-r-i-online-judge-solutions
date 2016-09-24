@@ -1,0 +1,15 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner scan = new Scanner(System.in);
+		String NAME = scan.next();
+		double FIXED = scan.nextDouble();
+		double SOLD = scan.nextDouble();
+		double TOTAL = FIXED + SOLD / 100 *15;
+		System.out.printf("TOTAL = R$ %.2f\n", TOTAL );
+
+	}
+}
