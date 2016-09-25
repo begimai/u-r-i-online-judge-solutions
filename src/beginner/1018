@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int number;
+		number = scan.nextInt();
+		int hundreds=0;
+		int fifty=0;
+		int twenty=0;
+		int ten=0;
+		int five=0;
+		int two=0;
+		int one=0;
+		
+		if (number < 1000000)
+		{
+			hundreds =+ number/100;
+			fifty =+ number%100/50;
+			twenty =+ number%100%50/20;
+			ten =+ number%100%50%20/10;
+			five =+ number%100%50%20%10/5;
+			two =+ number%100%50%20%10%5/2;
+			one =+ number%100%50%20%10%5%2/1;
+			
+		}
+		
+		System.out.printf("%d\n", number );
+		System.out.printf("%d nota(s) de R$ 100,00\n", hundreds );
+		System.out.printf("%d nota(s) de R$ 50,00\n", fifty );
+		System.out.printf("%d nota(s) de R$ 20,00\n", twenty );
+		System.out.printf("%d nota(s) de R$ 10,00\n", ten );
+		System.out.printf("%d nota(s) de R$ 5,00\n", five );
+		System.out.printf("%d nota(s) de R$ 2,00\n", two );
+		System.out.printf("%d nota(s) de R$ 1,00\n", one );
+
+	}
+}
