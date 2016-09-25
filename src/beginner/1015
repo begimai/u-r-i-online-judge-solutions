@@ -1,0 +1,21 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner scan = new Scanner(System.in);
+		double X1;
+		double Y1;
+		double X2;
+		double Y2;
+		X1 = scan.nextDouble();
+		Y1 = scan.nextDouble();
+		X2 = scan.nextDouble();
+		Y2 = scan.nextDouble();
+		
+		double distance  = Math.sqrt((X2 - X1)*(X2 - X1) + (Y2-Y1)*(Y2-Y1));
+		System.out.printf("%.4f\n", distance);
+
+	}
+}
