@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int X;
+		X = scan.nextInt();
+		int hours = 0;
+		int minutes = 0;
+		int seconds = 0;
+		if (X != 0)
+		{
+			hours  =+ X /3600;
+			minutes  =+ X %3600 / 60;
+			seconds  =+X%60%60;
+		}
+		
+		System.out.printf("%d:%d:%d\n", hours, minutes, seconds);
+    
+	}
+}
