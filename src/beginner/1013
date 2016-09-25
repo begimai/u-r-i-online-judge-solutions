@@ -1,0 +1,30 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner scan = new Scanner(System.in);
+		int A;
+		int B;
+		int C;
+		A = scan.nextInt();
+		
+		int maxValue = A;
+		B = scan.nextInt();
+		
+		if (B > maxValue)
+		{
+			maxValue = B;
+		}
+		
+		C = scan.nextInt();
+		
+		if (C > maxValue)
+		{
+			maxValue = C;
+		}
+		System.out.printf("%d eh o maior\n", maxValue);
+
+	}
+}
